@@ -1,0 +1,22 @@
+{
+  "name": "canvas-scraper",
+  "version": "1.0.0",
+  "description": "A tool for instructors/TAs with the Canvas API",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/superfishal/canvas-scraper.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/superfishal/canvas-scraper/issues"
+  },
+  "homepage": "https://github.com/superfishal/canvas-scraper#readme",
+  "dependencies": {
+    "dotenv": "^16.0.3"
+  }
+}
