@@ -7,22 +7,26 @@ let accessToken =
 let canvasApiUrl =
   "https://courses.bootcampspot.com/api/v1/courses/2756/users?access_token=15042~5aPm1Li9BUEEM1HSraSURhxy4yByeNJ8yW9KGLnPDpdR5V7DUzwFbIVGqNS3z2VW";
 
-fetch(canvasApiUrl, {
-  // mode: "no-cors",
-  header: "GET",
-  headers: {
-    Accept: 'application/json',
-  },
-}).then(
-  function(response) {
-    console.log(response)
-    return response.json();
-  },
+  fetch(canvasApiUrl, {
+    mode: "no-cors",
+  }).then(
+    function (res) {
+      if (res.status == 200 && res.ok) {
+        console.log("Promise resolved");
+        return res.json();
+      }
+      console.log("Promise rejected");
+      throw "promise rejected";
+    },
+    function (rej) {
+      console.log("promise rejected");
+      throw "promise rejected";
+    }
+  );
   // function (rej) {
   //   console.log("promise rejected");
   //   throw "promise rejected";
   // }
-);
 // fetch(canvasApiUrl, {
 //   mode: "no-cors",
 //   header: "GET",
