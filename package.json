@@ -2,7 +2,7 @@
   "name": "canvas-scraper",
   "version": "1.0.0",
   "description": "A tool for instructors/TAs with the Canvas API",
-  "main": "index.js",
+  "main": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
